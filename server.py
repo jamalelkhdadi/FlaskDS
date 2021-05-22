@@ -50,6 +50,7 @@ class BlogPost(db.Model):
 
 
 # routes
+@app.route("/")
 @app.route("/user", methods=["POST"])
 def create_user():
     data = request.get_json()
